@@ -9,4 +9,5 @@ module.exports = app => {
     app.get("/api/jokes/:_id", JokeController.findOneJoke);
     app.delete("/api/jokes/delete/:_id", JokeController.deleteJoke);
     app.patch("/api/jokes/update/:_id", JokeController.updateOneJoke);
+    // app.get("/api/jokes/random", JokeController.randomJoke);
 } 

@@ -33,3 +33,8 @@ module.exports.updateOneJoke = (req, res) => {
         .then(results => res.json({ results: results }))
         .catch(err => res.status(400).json({ message: "didnt werq", error: err }))
 }
+
+// module.exports.randomJoke = (req,res) => {
+//     Joke.find()
+//     .then( results => res.json({results[Math.floor(Math.random()*results.length)]}))
+// }
